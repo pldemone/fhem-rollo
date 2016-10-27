@@ -335,7 +335,7 @@ sub ROLLO_Start($) {
       fhem("$command2") if ($command2 ne "");
       fhem("$command3") if ($command3 ne "");
     } else {
-      #readingsSingleUpdate($hash,"drive-type","extern",1);
+      readingsSingleUpdate($hash,"drive-type","na",1);
       Log3 $name,4,"ROLLO ($name) drive-type is extern, not executing driving commands";
     }
 
