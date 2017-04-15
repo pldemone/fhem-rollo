@@ -186,7 +186,7 @@ sub ROLLO_Set($@) {
   my $typ = AttrVal($name,"type","normal");
   # Allow all positions 
   #if ( grep /^$arg$/, @positionsets )
-  if ($arg >= 0 && $arg <= 100 && $arg =~ /^[0-9,.E]+$/)
+  if ($arg && $arg >= 0 && $arg <= 100 && $arg =~ /^[0-9,.E]+$/)
   {
 	if ($cmd eq "position") { 
 	  if ($typ eq "HomeKit"){
@@ -231,9 +231,6 @@ sub ROLLO_Set($@) {
   return undef;
 }
 #################################################################### isAllowed #####
-# prüft ob der aktuelle Befehl im blocked mode erlaubt ist 						   #
-####################################################################################
-
 sub ROLLO_isAllowed($$$) {
   my ($hash,$cmd,$desired_position) = @_;
   my $name = $hash->{NAME};
