@@ -1,16 +1,8 @@
+ACHTUNG SPEZIALVERSION
+
 Dies ist eine Erweiterung für die Haussteuerung [FHEM](http://www.fhem.de "FHEM") 
 
 Das Modul wird im fhem-wiki beschrieben: [http://www.fhemwiki.de/wiki/ROLLO](http://www.fhemwiki.de/wiki/ROLLO)
 
-Support gibt es in folgendem Forumthread ["Neues Modul: Rolladensteuerung"](https://forum.fhem.de/index.php/topic,47202.0.html )
+Support gibt es in folgendem Forumthread [https://forum.fhem.de/index.php?action=post;topic=73964.405;last_msg=712760)
 
-## Installation
-
-Auf Updates prüfen: 
-`https://raw.githubusercontent.com/RettungsTim/fhem-rollo/master/controls_fhemrollo.txt`
-
-Auf die neueste Version updaten: 
-`update all https://raw.githubusercontent.com/RettungsTim/fhem-rollo/master/controls_fhemrollo.txt`
-
-Zum regulären FHEM Updateprozess hinzufügen: 
-`update add https://raw.githubusercontent.com/RettungsTim/fhem-rollo/master/controls_fhemrollo.txt`
