@@ -207,6 +207,7 @@ sub ROLLO_Set($@) {
       $desiredPos = $positions{$cmd};
     }
 
+    $desiredPos = "none" if !$desiredPos || $desiredPos eq "";
     ROLLO_Log3($name,4,"ROLLO ($name) set desired position $desiredPos");
   }
 
